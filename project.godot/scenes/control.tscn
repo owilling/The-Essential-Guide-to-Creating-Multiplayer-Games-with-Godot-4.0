@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://c38w1s5win412"]
+
+[ext_resource type="Script" uid="uid://deje2lyy1ungf" path="res://scripts/MainMenu.gd" id="1_5p55f"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5p55f")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 311.0
+offset_top = 83.0
+offset_right = 848.0
+offset_bottom = 263.0
+theme_override_font_sizes/font_size = 100
+text = "Are you a..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ClientButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 327.0
+offset_right = 474.0
+offset_bottom = 440.0
+text = "Client"
+
+[node name="ServerButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 635.0
+offset_top = 325.0
+offset_right = 771.0
+offset_bottom = 438.0
+text = "Server"
+
+[connection signal="pressed" from="ClientButton" to="." method="_on_client_button_pressed"]
+[connection signal="pressed" from="ServerButton" to="." method="_on_server_button_pressed"]
