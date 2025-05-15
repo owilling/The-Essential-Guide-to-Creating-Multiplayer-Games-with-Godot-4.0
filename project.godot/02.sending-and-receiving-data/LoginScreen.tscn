@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3682crnlgnbg"]
 
-[ext_resource type="Script" path="res://02.sending-and-receiving-data/LoginScreen.gd" id="1_hbkdi"]
+[ext_resource type="Script" uid="uid://jduf30sg7oup" path="res://02.sending-and-receiving-data/LoginScreen.gd" id="1_hbkdi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oymwe"]
 font_color = Color(1, 0.2, 0.2, 1)

@@ -13,3 +13,7 @@ config_version=5
 config/name="project.godot"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AuthenticationCredentials="*res://02.sending-and-receiving-data/AuthenticationCredentials.gd"
